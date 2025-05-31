@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy One Year Anniversary Twitie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #f3e8ff;
+      color: #4b0082;
+    }
+    h1, h2, h3 {
+      font-family: 'Pacifico', cursive;
+    }
+    .section {
+      padding: 40px;
+      text-align: center;
+    }
+    .love-letter, .things, .songs, .timeline, .private-message, .gallery {
+      background: #fff0f5;
+      margin: 20px auto;
+      border-radius: 15px;
+      padding: 20px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "💘 ";
+    }
+    .password-input {
+      margin-top: 10px;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <h1>Happy One Year Anniversary Twitie 😽</h1>
+    <p>Welcome to a little surprise I made just for you 💕</p>
+  </div>
+
+  <div class="section love-letter">
+    <h2>My Love Letter to You</h2>
+    <p>
+      Twitie, every day with you is a gift I never take for granted. From our silly laughs to our deep talks,
+      I’ve fallen for you more and more. I love your smile, your heart, and the way you make me feel like I’m home. 💖
+    </p>
+  </div>
+
+  <div class="section timeline">
+    <h2>Our Journey</h2>
+    <ul>
+      <li>💑 We came into this beautiful relation – May 27, 2024</li>
+      <li>🫂 First meet and hug – May 28, 2024</li>
+      <li>💏 First Kiss – June 22, 2024</li>
+      <li>🏖 First Date – October 10, 2024</li>
+      <li>😋 First Time We Fed Each Other – February 2, 2025</li>
+      <li>🎉 One Year Anniversary – May 27, 2025</li>
+    </ul>
+  </div>
+
+  <div class="section songs">
+  <h2>Our Song</h2>
+  <p>This song reminds me so much of us ❤️</p>
+  <iframe width="100%" height="200" 
+    src="https://www.youtube.com/embed/nhXJQF7qW3A" 
+    title="Line Without a Hook" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+  <div class="section things">
+    <h2>Things I Love About You</h2>
+    <ul>
+      <li>Your laugh – it’s contagious!</li>
+      <li>Your caring heart ❤️</li>
+      <li>The way you look at me 😍</li>
+      <li>How you always check on me 💬</li>
+      <li>Your sleepy voice and sleepy face 😴</li>
+    </ul>
+  </div>
+
+  <div class="section gallery">
+    <h2>Photo Memories 📸</h2>
+    <p>Some of our favorite moments together:</p>
+    <!-- Replace the src below with actual image file names or URLs -->
+    <img src="https://i.supaimg.com/f343d08f-3110-41c1-b78d-b7e3a536dbe0.jpg" alt="It feels like home🫀">
+    <img src="https://i.supaimg.com/9026d979-745e-441b-bda8-787c7e797585.jpg" alt="It feels like heaven">
+    <img src="https://i.supaimg.com/704a3378-1616-4350-8bea-f5358c3ccfc6.jpg" alt="I wanna stay like this with you forever💏">
+    <img src="https://i.supaimg.com/91022ab5-a102-4b92-87b5-72d7ab8ed9f6.jpg" alt="The best thing ever happened to me 🦥">
+  </div>
+
+  <div class="section private-message">
+    <h2>Secret Message Just for You 💌</h2>
+    <input class="password-input" type="password" id="password" placeholder="Enter the magic word..." />
+    <button onclick="checkPassword()">Open</button>
+    <div class="hidden-message" id="secretMessage">
+      You’re the best thing that ever happened to me. I love you more than words can say baby. ❤️
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const message = document.getElementById("secretMessage");
+      if (input.toLowerCase() === "bunny") {
+        message.style.display = "block";
+      } else {
+        alert("Oops! Try again, love 💕");
+      }
+    }
+  </script>
+</body>
+</html>
